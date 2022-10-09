@@ -138,7 +138,6 @@ const MainPage = () => {
             <div className="row align-items-end">
               <div className="col-lg-6 col-md-12 col-sm-12 col-12 mx-auto">
                 <h2 className="text-light text-center">Partners</h2>
-                {/* <hr class="mb-3 mx-auto col-lg-4" /> */}
               </div>
             </div>
             <div className="row pb--120 mb--100 justify-content-center">

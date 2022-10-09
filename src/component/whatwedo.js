@@ -6,10 +6,7 @@ const Whatwedo = () => {
       <div className="">
         <div id="whatwedo" className="about-area">
           <div className="about-wrapper-wwd">
-            <div
-              className="container  pt--200"
-              style={{ maxWidth: '90%', height: '100vh' }}
-            >
+            <div className="container my-auto" style={{ maxWidth: '90%' }}>
               <div className="row justify-content-center">
                 <h2 className="title-top">What We Do</h2>
               </div>
@@ -26,8 +23,14 @@ const Whatwedo = () => {
                   <br />
                 </h4>
               </div>
-              <div className="row h-50 ptb--70 justify-content-center">
-                <div
+              <div className="row h-50 ptb--70 justify-content-around align-items-around">
+                <div className="row align-items-center pb--20">
+                  <img src="/assets/images/bgpage/1vision1.png" alt="vision" />
+                </div>
+                <div className="row align-items-center pb--20">
+                  <img src="/assets/images/bgpage/1mission1.png" alt="misson" />
+                </div>
+                {/* <div
                   className="col-lg-5 col-md-7 h-100"
                   style={{
                     background: `url(/assets/images/bgpage/bgwwd.png)`,
@@ -135,7 +138,7 @@ const Whatwedo = () => {
                       </h5>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* <div
                   className="col-lg-6 col-md-12 h-100"

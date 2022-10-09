@@ -58,16 +58,6 @@ function ProductAi() {
       buttonText: 'Contact Us',
       buttonLink: '/contact',
     },
-    {
-      textPosition: 'text-right',
-      bgImage: 'bg_image--37',
-      category: '',
-      title: 'Tactical Simulation',
-      description:
-        'TacSims Comes with a rich set of capabilities that enables you to create,\nexecute, and distribute simulation scenarios. Using its intuitive interfaces,\nTacSims quickly adjust its speed and show productivity immediately. Build\nscenarios that scales from just a few individuals in close quarters to large\nmulti-echelon simulations covering the planet.',
-      buttonText: 'Contact Us',
-      buttonLink: '/contact',
-    },
   ];
 
   const green = () => {
@@ -126,7 +116,7 @@ function ProductAi() {
             <div
               className={`slide slide-style-2 d-flex align-items-center justify-content-center bg_image ${value.bgImage} vh-100`}
               key={index}
-              data-black-overlay="8"
+              // data-black-overlay="8"
             >
               {/* <div className="container">
                 <div className="row">

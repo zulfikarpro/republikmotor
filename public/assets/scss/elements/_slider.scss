@@ -848,8 +848,8 @@ Slider Default Button And Dot STyle
         display: none !important;
       }
       &:hover {
-        background: $theme-color;
-        border-color: $theme-color;
+        // background: $theme-color;
+        // border-color: $theme-color;
       }
       &::before {
         line-height: 1;

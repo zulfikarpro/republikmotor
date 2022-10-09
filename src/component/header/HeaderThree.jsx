@@ -50,7 +50,7 @@ class HeaderThree extends Component {
         };
       }
     }
-    const { logo, color = 'default-color' } = this.props;
+    const { logo, color = 'header-color' } = this.props;
     let logoUrl;
     if (logo === 'light') {
       logoUrl = (
@@ -63,9 +63,9 @@ class HeaderThree extends Component {
     } else if (logo === 'symbol-dark') {
       logoUrl = (
         <img
-          src="/assets/images/logo/republikteknologi.png"
+          src="/assets/images/logo/republikmotor.png"
           alt="logo"
-          // style={{ maxWidth: '200px' }}
+          style={{ maxWidth: '200px' }}
         />
       );
     } else if (logo === 'symbol-light') {

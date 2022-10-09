@@ -102,7 +102,7 @@ function ProductAi() {
   //   </div>
   // );
   return (
-    <div className="slider-wrapper">
+    <div id="products" className="slider-wrapper">
       <div
         className="position-absolute aiProducts"
         style={{ width: '100vw', zIndex: 3 }}
@@ -110,11 +110,13 @@ function ProductAi() {
         <div className="container">
           <div className="row justify-content-center pt--100">
             <div className="col-lg-12 row justify-content-center title">
-              <span className="mx-auto">ARTIFICIAL INTELLIGENCE</span>
+              <span className="mx-auto" style={{ color: `$theme-color` }}>
+                Products
+              </span>
             </div>
-            <div className="col-lg-12 row justify-content-center subtitle">
+            {/* <div className="col-lg-12 row justify-content-center subtitle">
               SURVEILLANCE, CYBER, AND MULTI-INTELLIGENCE{' '}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -126,7 +128,7 @@ function ProductAi() {
               key={index}
               data-black-overlay="8"
             >
-              <div className="container">
+              {/* <div className="container">
                 <div className="row">
                   <div className="col-lg-12">
                     <div className={`inner ${value.textPosition}`}>
@@ -153,12 +155,6 @@ function ProductAi() {
                       )}
                       {value.array ? (
                         <div className="mw--50">
-                          {/* {value.array.map((item) => (
-                            <div className="desc array">
-                              <span className="span">+ </span>
-                              {item}
-                            </div>
-                          ))} */}
                           <ul className="directions">
                             {value.array.map((item) => (
                               <p className="text-light description">
@@ -170,22 +166,10 @@ function ProductAi() {
                       ) : (
                         ''
                       )}
-                      {/* {value.buttonText ? (
-                        <div className="slide-btn">
-                          <a
-                            className="rn-button-style--2 btn-solid"
-                            href={`${value.buttonLink}`}
-                          >
-                            {value.buttonText}
-                          </a>
-                        </div>
-                      ) : (
-                        ''
-                      )} */}
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           ))}
         </Slider>

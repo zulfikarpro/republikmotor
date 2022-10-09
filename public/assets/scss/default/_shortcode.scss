@@ -16,6 +16,7 @@ font-family: 'Poppins', sans-serif;
 }
 .fix {
   overflow: hidden;
+  max-height: 1080px;
 }
 
 .visuallyhidden {
@@ -175,6 +176,10 @@ p:last-child {
 }
 .text-underline {
   font-style: underline;
+}
+
+.text-p {
+  font-size: 200px;
 }
 
 /* Height and width */

@@ -23,7 +23,7 @@
   }
   .header-wrapper {
     display: flex;
-    max-width: 1280px;
+    max-width: 90%;
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
@@ -238,8 +238,9 @@
 
     &.sticky {
       position: fixed;
-      background: #ffffff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      // background: #ffffff;
+      background: $header-color;
+      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       .header-wrapper {
         padding: 0px;
         a {

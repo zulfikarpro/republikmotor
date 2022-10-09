@@ -17,20 +17,31 @@ const SlideList = [
 class SliderFive extends Component {
   render() {
     return (
-      <div className="slider-activation" style={{ background: `transparent` }}>
+      <div
+        className="slider-activation"
+        style={{
+          background: `url(assets/images/bgpage/BG1.jpg)`,
+          backgroundSize: '100%',
+        }}
+      >
         {/* Start Single Slide */}
         <div
           className="slide slide-style-1 slider-fixed--height d-flex align-items-center bg_image bg_image--1"
           data-black-overlay="6"
         >
-          <div className="container position-relative">
+          <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-12 align-items-center">
                 <div className="inner">
-                  <h2 className="h2">We Are Advance in</h2>
                   <div className="front-title">
-                    Military Technology <br /> Industry
+                    REPUBLIK
+                    <br /> MOTOR
                   </div>
+                  <h6 className="h6">
+                    The future of automotive technology, design, research, and
+                    <br />
+                    development
+                  </h6>
                 </div>
               </div>
             </div>

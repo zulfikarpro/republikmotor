@@ -779,7 +779,7 @@ Slider Default Button And Dot STyle
 ---------------------------------------*/
 
 .slider-activation {
-  position: relative;
+  position: center;
   .slick-dots {
     bottom: 60px;
     @media #{$sm-layout} {
@@ -804,11 +804,16 @@ Slider Default Button And Dot STyle
             width: 20px;
           }
 
+          .h5 {
+            margin-top: 20px;
+            color: black;
+          }
+
           .front-title {
-            font-size: 80px;
-            line-height: 120%;
+            font-size: 120px;
+            line-height: 80%;
             font-weight: 700;
-            color: #fff;
+            color: $theme-color;
             @media #{$sm-layout} {
               font-size: 40px;
               line-height: 120%;

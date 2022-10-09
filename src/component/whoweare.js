@@ -3,45 +3,48 @@ import React, { Component } from 'react';
 const WhoWeAre = () => {
   const title = 'Who We Are',
     description1 =
-      'PT. Republik Technology is part of RepubliKorp group that focuses on current technological advancements such as the conception, development and application or installation of IP based equipment and communication device, among others our current development is in the field of Computer Science and Artificial Intelligence.',
+      'Republik Motor is a subsidiary company of Republikorp which engages in the field of automotive technology,design, research, and development.',
     description2 =
-      'With the auspices of the Ministry of Defense, Republik Technology is developing Indonesia’s defensive capabilities to face the growing threats of instability in the Asia Pacific Region through developments of military technology advancements. All our procurement strategies are strictly aligned with operational directions from the Indonesian National Armed Forces';
-
+      'We take pride in our cooperation with international \n partners and our own indigenous automotive design specifically made for Indonesian market.';
   return (
-    <div id="" className="fix pt--100">
-      <div
-        className=""
-        style={{ width: '100vw', height: '', background: 'black' }}
-      >
+    <div id="" className="fix">
+      <div className="">
         <div id="whoweare" className="about-area">
-          <div className="about-wrapper ptb--120">
-            <div className="container">
+          <div className="about-wrapper">
+            <div className="container" style={{ maxWidth: '90%' }}>
               <div className="row h-100">
-                <div className="col-lg-7 my-auto">
-                  <div
-                    className="about-inner inner"
-                    // style={{ marginTop: '30%' }}
-                  >
-                    <div className="section-title">
-                      <h2 className="title">
-                        <span className="theme-gradient">Who</span>
-                        <span className="text-light"> We </span>
-                        <span className="theme-gradient">Are</span>
-                      </h2>
-                      <div className="mt--100" />
-                      <h3 className="">Established 2020</h3>
-                      <p className="text-light text-justify">{description1}</p>
-                      <p className="text-light text-justify">{description2}</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-5 align-content-end">
+                <div className="col-lg-6 align-content-end">
                   <div className="thumbnail">
                     {/* <img
                       className="responsive bg-primary"
                       src="/assets/images/whoweare/2 army.jpg"
                       alt="Who We Are Images"
                     /> */}
+                  </div>
+                </div>
+                <div className="col-lg-5 my-auto">
+                  <div
+                    className="about-inner"
+                    // style={{ marginTop: '30%' }}
+                  >
+                    <div className="section-title">
+                      <h3 className="title">Who We Are</h3>
+                      <div />
+                      <h4 className="description text-light text-justify">
+                        Republik Motor is a subsidiary company of Republikorp
+                        <br /> which engages in the field of automotive
+                        technology,
+                        <br />
+                        design, research, and development.
+                      </h4>
+                      <h4 className=" description text-light text-justify">
+                        We take pride in our cooperation with international
+                        <br />
+                        partners and our own indigenous automotive design
+                        <br />
+                        specifically made for Indonesian market.
+                      </h4>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -93,6 +93,14 @@ export const slickDot = {
   ],
 };
 
+export const slideEmblem = {
+  // infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  // dots: true,
+  // centerMode: true,
+  adaptiveHeight: false,
+};
 export const slideSlick = {
   infinite: true,
   slidesToShow: 1,

@@ -16,6 +16,14 @@
 .aiProducts {
   .title {
     font-size: $h2;
+    color: $theme-color;
+    font-weight: 700;
+    @media #{$sm-layout} {
+      font-size: $h4;
+    }
+  }
+  .titleWhite {
+    font-size: $h2;
     color: white;
     font-weight: 700;
     @media #{$sm-layout} {

@@ -14,23 +14,19 @@ const WhoWeAre = () => {
             <div className="container h-100" style={{ maxWidth: '90%' }}>
               <div className="row h-100">
                 <div className="col-lg-6"></div>
-                <div className="col-lg-6 align-items-center justify-content-center">
+                <div className="col-lg-4 align-items-center justify-content-center">
                   <div className="content">
                     <div className="">
                       <h2 className="title">Who We Are</h2>
                       <div />
                       <h4 className="description text-light text-justify">
                         Republik Motor is a subsidiary company of Republikorp
-                        <br /> which engages in the field of automotive
-                        technology,
-                        <br />
+                        which engages in the field of automotive technology,
                         design, research, and development.
                       </h4>
                       <h4 className=" description text-light text-justify">
                         We take pride in our cooperation with international
-                        <br />
                         partners and our own indigenous automotive design
-                        <br />
                         specifically made for Indonesian market.
                       </h4>
                     </div>

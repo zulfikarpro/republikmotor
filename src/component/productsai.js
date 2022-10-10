@@ -110,14 +110,22 @@ function ProductAi() {
           </div>
         </div>
       </div>
-      <div className="slider-activation">
-        <Slider className="rn-slick-dot dot-light" {...slideSlick}>
+      <div className="slider-activation vh-100">
+        <Slider className="rn-slick-dot dot-light vh-100" {...slideSlick}>
           {SlideList.map((value, index) => (
+            // <div
+            //   className={`slide slide-style-2 d-flex align-items-center justify-content-center bg_image ${value.bgImage} vh-100`}
+            //   // className={`slide slide-style-2 d-flex align items-center justify-content-center`}
+            //   key={index}
+            //   data-black-overlay="1"
+            //   style={{ width: '80vw', height: '100vh' }}
+            // >
             <div
-              className={`slide slide-style-2 d-flex align-items-center justify-content-center bg_image ${value.bgImage} vh-100`}
+              className="row vh-100 slide-style-2 d-flex justify-content-center"
               key={index}
-              // data-black-overlay="8"
             >
+              <div className={`col-11 bg_image ${value.bgImage}`} />
+              {/* <img src={`/assets/images/bg/${value.bgImage}.jpg`} /> */}
               {/* <div className="container">
                 <div className="row">
                   <div className="col-lg-12">

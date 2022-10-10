@@ -600,6 +600,12 @@
 
 .portfolio-sacousel-inner,
 .rn-slick-dot {
+  img {
+    justify-self: center;
+    align-self: center;
+    max-width: 300px;
+    margin: auto;
+  }
   .slick-dots {
     bottom: -60px;
     @media #{$large-mobile} {

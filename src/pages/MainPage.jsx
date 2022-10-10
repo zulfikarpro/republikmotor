@@ -23,6 +23,7 @@ import Products from '../component/products';
 import ProductAi from '../component/productsai';
 import MobileSOC from '../component/mobileSoc';
 import AntiDrone from '../component/antidrone';
+import Emblem from '../component/emblem';
 
 const SlideList = [
   {
@@ -127,7 +128,7 @@ const MainPage = () => {
         {ProductAi()}
         <div
           id="partner"
-          className="rn-blog-area ptb--100"
+          className="rn-blog-area ptb--100 aiProducts h-100"
           style={{
             background: `url(assets/images/bgpage/bgpartner.png)`,
             backgroundSize: 'cover',
@@ -135,9 +136,9 @@ const MainPage = () => {
           }}
         >
           <div className="container">
-            <div className="row align-items-end">
-              <div className="col-lg-6 col-md-12 col-sm-12 col-12 mx-auto">
-                <h2 className="text-light text-center">Partners</h2>
+            <div className="row justify-content-center pt--100">
+              <div className="col-lg-12 row justify-content-center title">
+                <span className="text-center ">Partners</span>
               </div>
             </div>
             <div className="row pb--120 mb--100 justify-content-center">
@@ -151,50 +152,53 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          {/* <div
-            className="fix row align-items-end pb--50"
-            style={{
-              background: `url(assets/images/bgpage/bgcontact.png)`,
-              backgroundSize: 'cover',
-              height: '50vh',
-            }}
-          >
-            <div id="contactus" className="container">
-              <div className="row justify-content-around">
-                <div className="col-lg-5 col-sm-12">
-                  <img
-                    src="/assets/images/logo/republikmotor.png"
-                    alt="logo"
-                    style={{ maxWidth: '200px' }}
-                    className="mb-4"
-                  />
-                  <p className="text-light">
-                    RPX Building 9Th Floor, Ciputat Raya No. 99,
-                    <br />
-                    South Jakarta, Indonesia, 12310
-                    <br />
-                    +62 21 75 918 007
-                    <br />
-                    info@republikarmamen.com
-                  </p>
-                </div>
+        </div>
 
-                <div
-                  className="col-lg-7 col-md-12 col-sm-12 col-12 text-light footerText"
-                  // style={{ fontSize: '10px' }}
-                >
-                  © 2021 Republik Armamen. Trademarks and brands are the
-                  property of their respective owners.
-                </div>
+        {Emblem()}
+        <div
+          className="fix row align-items-end pb--50"
+          style={{
+            background: `url(/assets/images/bgpage/bgfooter.png)`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            height: '100vh',
+          }}
+        >
+          <div id="contactus" className="container">
+            <div className="row justify-content-around">
+              <div className="col-lg-5 col-sm-12">
+                <img
+                  src="/assets/images/logo/republikmotor.png"
+                  alt="logo"
+                  style={{ maxWidth: '200px' }}
+                  className="mb-4"
+                />
+                <p className="text-light">
+                  RPX Building 9Th Floor, Ciputat Raya No. 99,
+                  <br />
+                  South Jakarta, Indonesia, 12310
+                  <br />
+                  +62 21 75 918 007
+                  <br />
+                  info@republikarmamen.com
+                </p>
+              </div>
+
+              <div
+                className="col-lg-7 col-md-12 col-sm-12 col-12 text-light footerText"
+                // style={{ fontSize: '10px' }}
+              >
+                © 2021 Republik Armamen. Trademarks and brands are the property
+                of their respective owners.
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="backto-top">
-            <ScrollToTop showUnder={160}>
-              <FiChevronUp />
-            </ScrollToTop>
-          </div> */}
+        <div className="backto-top">
+          <ScrollToTop showUnder={160}>
+            <FiChevronUp />
+          </ScrollToTop>
         </div>
       </div>
     </>

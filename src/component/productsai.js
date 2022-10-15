@@ -22,6 +22,7 @@ function ProductAi() {
     {
       textPosition: 'text-right',
       bgImage: 'bg_image--34',
+      image: `/assets/images/bg/bg-image-42.jpg`,
       category: '',
       title: 'Advance Intelligence Analytics Systems \n /Cyber Intelligence',
       description: '',
@@ -36,6 +37,7 @@ function ProductAi() {
     {
       textPosition: 'text-left',
       bgImage: 'bg_image--35',
+      image: `/assets/images/bg/bg-image-43.jpg`,
       category: '',
       title: 'Multi Intelligence System',
       array: [
@@ -51,6 +53,7 @@ function ProductAi() {
     {
       textPosition: 'text-right',
       bgImage: 'bg_image--36',
+      image: `/assets/images/bg/bg-image-44.jpg`,
       category: '',
       title: 'Advance AI Surveillance Defense System',
       description:
@@ -92,11 +95,12 @@ function ProductAi() {
   //   </div>
   // );
   return (
-    <div id="products" className="slider-wrapper">
-      <div
-        className="position-absolute aiProducts"
-        style={{ width: '100vw', zIndex: 3 }}
-      >
+    <div
+      id="products"
+      className="slider-wrapper"
+      style={{ background: 'black' }}
+    >
+      <div className="aiProducts" style={{ width: '100vw', zIndex: 3 }}>
         <div className="container">
           <div className="row justify-content-center pt--100">
             <div className="col-lg-12 row justify-content-center title">
@@ -110,21 +114,31 @@ function ProductAi() {
           </div>
         </div>
       </div>
-      <div className="slider-activation vh-100">
-        <Slider className="rn-slick-dot dot-light vh-100" {...slideSlick}>
+      <div className="slider-activation vh-100 align-items-center bg-transparent">
+        <Slider className="rn-slick-dot dot-light pt-auto" {...slideSlick}>
           {SlideList.map((value, index) => (
-            // <div
-            //   className={`slide slide-style-2 d-flex align-items-center justify-content-center bg_image ${value.bgImage} vh-100`}
-            //   // className={`slide slide-style-2 d-flex align items-center justify-content-center`}
-            //   key={index}
-            //   data-black-overlay="1"
-            //   style={{ width: '80vw', height: '100vh' }}
-            // >
             <div
+              // className={`slide slide-style-2 d-flex align-items-center justify-content-center bg_image ${value.bgImage}`}
+              // className={`slide slide-style-2 d-flex align items-center justify-content-center`}
+              key={index}
+              data-black-overlay="1"
+              // style={{ width: '80vw', height: '100vh' }}
+            >
+              <div className={`d-flex`}>
+                <img
+                  src={value.image}
+                  style={{
+                    maxWidth: '100%',
+                    maxHeight: '100%',
+                  }}
+                  className="row"
+                ></img>
+              </div>
+              {/* <div
               className="row vh-100 slide-style-2 d-flex justify-content-center"
               key={index}
             >
-              <div className={`col-11 bg_image ${value.bgImage}`} />
+              <div className={`col-11 bg_image ${value.bgImage}`} /> */}
               {/* <img src={`/assets/images/bg/${value.bgImage}.jpg`} /> */}
               {/* <div className="container">
                 <div className="row">

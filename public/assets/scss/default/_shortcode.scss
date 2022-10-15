@@ -147,10 +147,25 @@ font-family: 'Poppins', sans-serif;
   @extend %bgImagePosition;
 }
 
+.bg_image--34 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  justify-self: center;
+  align-self: center;
+}
+
+.bg_image--35 {
+}
+
+.bg_image--36 {
+}
+
 @for $i from 1 through 40 {
   .bg_image--#{$i} {
     background-image: url(/assets/images/bg/bg-image-#{$i}.jpg) !important;
-    background-size: cover;
+    height: 100%;
+    // background-size: auto 140%;
   }
 }
 

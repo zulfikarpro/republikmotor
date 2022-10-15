@@ -676,6 +676,10 @@ Slick Animation For Slider
         }
       }
       &.slide-style-2 {
+        img {
+          display: flex;
+          background-color: red;
+        }
         .inner {
           li::marker {
             content: '+ ';

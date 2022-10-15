@@ -67,7 +67,7 @@ const Emblem = () => {
           {SlideList.map((value, index) => (
             <div className="mw--100">
               <img
-                src="/assets/images/bgpage/emblem/gb8.png"
+                src={value.image}
                 alt={value.image}
                 // style={{ margin: '0px' }}
                 //   className="slide-style-3 "

@@ -115,7 +115,6 @@ const MainPage = () => {
     <>
       <div className="active-dark">
         <Helmet pageTitle="Republik Motor" />
-
         <HeaderThree
           className="mx-auto"
           homeLink="/"
@@ -126,6 +125,7 @@ const MainPage = () => {
         {WhoWeAre()}
         {Whatwedo()}
         {ProductAi()}
+        {Emblem()}
         <div
           id="partner"
           className="rn-blog-area ptb--100 aiProducts h-100"
@@ -153,10 +153,8 @@ const MainPage = () => {
             </div>
           </div>
         </div>
-
-        {Emblem()}
-        <div
-          className="fix row align-items-end pb--50"
+        {/* <div
+          className="fix row align-items-around pb--50"
           style={{
             background: `url(/assets/images/bgpage/bgfooter.png)`,
             backgroundSize: 'cover',
@@ -164,15 +162,15 @@ const MainPage = () => {
             height: '100vh',
           }}
         >
-          <div id="contactus" className="container">
-            <div className="row justify-content-around">
-              <div className="col-lg-5 col-sm-12">
-                <img
-                  src="/assets/images/logo/republikmotor.png"
-                  alt="logo"
-                  style={{ maxWidth: '200px' }}
-                  className="mb-4"
-                />
+          <div className="row justify-content-center">
+            <div className="col-10  align-content-end justify-content-end">
+              <img
+                src="/assets/images/logo/republikmotor.png"
+                alt="logo"
+                // style={{ maxWidth: '50%', padding: 'auto' }}
+                // className="mx-auto my-auto"
+              />
+              <div className="col bg-warning align-items-end">
                 <p className="text-light">
                   RPX Building 9Th Floor, Ciputat Raya No. 99,
                   <br />
@@ -183,23 +181,90 @@ const MainPage = () => {
                   info@republikarmamen.com
                 </p>
               </div>
-
-              <div
-                className="col-lg-7 col-md-12 col-sm-12 col-12 text-light footerText"
-                // style={{ fontSize: '10px' }}
-              >
-                © 2021 Republik Armamen. Trademarks and brands are the property
-                of their respective owners.
-              </div>
             </div>
           </div>
-        </div>
 
-        <div className="backto-top">
-          <ScrollToTop showUnder={160}>
-            <FiChevronUp />
-          </ScrollToTop>
+          {/* <div>
+            <p className="text-light">
+              RPX Building 9Th Floor, Ciputat Raya No. 99,
+              <br />
+              South Jakarta, Indonesia, 12310
+              <br />
+              +62 21 75 918 007
+              <br />
+              info@republikarmamen.com
+            </p>
+          </div> */}
+        <div
+          id="contactus"
+          className="about-area"
+          style={{
+            background: `url(/assets/images/bgpage/bgfooter.png)`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            height: '100vh',
+          }}
+        >
+          <div className="contactUs">
+            <div className="image-container d-inline-flex my-auto">
+              <img
+                src="/assets/images/logo/republikmotor.png"
+                alt="logo"
+                className="mx-auto"
+              />
+            </div>
+            <div className="text-container d-inline-flex">
+              <span className="text">
+                RPX Building 9Th Floor, Ciputat Raya No. 99,
+                <br />
+                South Jakarta, Indonesia, 12310
+                <br />
+                +62 21 75 918 007 - info@republikmotor.com
+              </span>
+            </div>
+          </div>
+          {/* <div className="row justify-self-center">
+            <p className="text-light align-self-center text-center">
+              RPX Building 9Th Floor, Ciputat Raya No. 99,
+              <br />
+              South Jakarta, Indonesia, 12310
+              <br />
+              +62 21 75 918 007 - info@republikmotor.com
+            </p>
+          </div> */}
+          {/* <div
+            className="col bg-warning align-items-end mx-auto"
+            style={{ maxWidth: '90%' }}
+          >
+            <div className="align-content-center mt-auto mx-auto bg-dark justify-content-center">
+              <img
+                src="/assets/images/logo/republikmotor.png"
+                alt="logo"
+                style={{ maxWidth: '50%' }}
+                className="mt-auto mx-auto bg-primary"
+              />
+            </div>
+            <div className="row justify-self-center">
+              <p className="text-light align-self-center text-center">
+                RPX Building 9Th Floor, Ciputat Raya No. 99,
+                <br />
+                South Jakarta, Indonesia, 12310
+                <br />
+                +62 21 75 918 007 - info@republikmotor.com
+              </p>
+            </div>
+          </div> */}
         </div>
+      </div>
+
+      <div className="footerText row text-center row justify-content-center py-auto">
+        © 2021 Republik Motor. Trademarks and brands are the property of their
+        respective owners.
+      </div>
+      <div className="backto-top">
+        <ScrollToTop showUnder={160}>
+          <FiChevronUp />
+        </ScrollToTop>
       </div>
     </>
   );

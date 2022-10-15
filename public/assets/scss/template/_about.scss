@@ -2,6 +2,36 @@
     About Area 
 ======================*/
 
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: end;
+  .image-container {
+    @media #{$sm-layout} {
+      padding-top: 20%;
+    }
+    img {
+      max-width: 50%;
+      @media #{$sm-layout} {
+        max-width: 80%;
+      }
+    }
+  }
+  .text-container {
+    .text {
+      margin-inline: auto;
+      text-align: center;
+      color: #ffffff;
+      font-size: 16px;
+      padding-bottom: 5%;
+      @media #{$sm-layout} {
+        font-size: 10px;
+        padding-bottom: 10%;
+      }
+    }
+  }
+}
 .rn-finding-us-area {
   .inner {
     position: relative;
@@ -176,11 +206,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   @media #{$sm-layout} {
-    background-position: bottom;
-    height: auto;
+    background-position: top;
+    height: 200vh;
     padding-bottom: 100%;
   }
   @media #{$lg-layout} {

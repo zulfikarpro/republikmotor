@@ -11,7 +11,7 @@ const WhoWeAre = () => {
       <div className="">
         <div id="whoweare" className="about-area">
           <div className="about-wrapper">
-            <div className="container h-100" style={{ maxWidth: '90%' }}>
+            <div className="container my-auto" style={{ maxWidth: '90%' }}>
               <div className="row h-100">
                 <div className="col-lg-6"></div>
                 <div className="col-lg-4 align-items-center justify-content-center">

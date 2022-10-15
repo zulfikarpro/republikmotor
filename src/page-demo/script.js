@@ -95,7 +95,7 @@ export const slickDot = {
 
 export const slideEmblem = {
   // infinite: true,
-  slidesToShow: 5,
+  slidesToShow: 4,
   slidesToScroll: 1,
   // dots: true,
   // centerMode: true,
